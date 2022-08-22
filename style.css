@@ -1,3 +1,11 @@
 .MainText {
     color: #ff4545;
 }
+
+.container {
+    margin: 3% 10% 3% 10%;
+}
+
+.calculation {
+    margin-left: 15%;
+}
