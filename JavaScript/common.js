@@ -8,3 +8,9 @@ function display(playerID, playerBtn) {
     }
     else alert("You Cannot Select More than Five Player");
 }
+function Validation(evnt) {
+    const char = String.fromCharCode(evnt.which);
+    if (!(/[0-9]/.test(char))) {
+        alert('Please Input Number Only');
+    }
+}

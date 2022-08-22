@@ -32,3 +32,11 @@ document.getElementById('PlayerExpensesCalculate').addEventListener("click", fun
     const input = parseInt(document.getElementById('PerPlayer').value);
     document.getElementById('PlayerExpenses').innerText = input * count;
 });
+
+document.getElementById('TotalCostCalculate').addEventListener("click", function () {
+    const Coach = parseInt(document.getElementById('coach').value);
+    const Manager = parseInt(document.getElementById('manager').value);
+    const PlayerExpenses = parseInt(document.getElementById('PlayerExpenses').innerText);
+    const TotalCost = PlayerExpenses + Coach + Manager;
+    document.getElementById('TotalCost').innerText = TotalCost;
+});
